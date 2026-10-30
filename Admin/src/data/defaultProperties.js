@@ -1,0 +1,215 @@
+export const defaultProperties = [
+  {
+    id: 1,
+    title: 'East Side Living',
+    slug: 'east-side-living',
+    category: 'Properties',
+    price: '$1,250,000',
+    priceNumber: 1250000,
+    location: 'Manhattan, New York, NY',
+    beds: 3,
+    baths: 2,
+    sqft: '1,200',
+    status: 'Active',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80',
+    description: 'Contemporary architectural living featuring high ceilings, open floor plans, and panoramic skyline vistas in the heart of Manhattan.'
+  },
+  {
+    id: 2,
+    title: 'The White House J-54',
+    slug: 'the-white-house-j-54',
+    category: 'Royal House',
+    price: '$3,650,000',
+    priceNumber: 3650000,
+    location: 'Beverly Hills, California, CA',
+    beds: 5,
+    baths: 4,
+    sqft: '1,800',
+    status: 'Active',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+    description: 'Designed for grandeur and modern contemporary elegance, offering expansive open floor layouts and landscaped garden views.'
+  },
+  {
+    id: 3,
+    title: 'Wheelwright Cottage House',
+    slug: 'wheelwright-cottage-house',
+    category: 'Farm Villa',
+    price: '$2,400,000',
+    priceNumber: 2400000,
+    location: 'East Hampton, New York, NY',
+    beds: 4,
+    baths: 3,
+    sqft: '1,800',
+    status: 'Active',
+    featured: false,
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+    description: 'A serene luxury retreat surrounded by lush greenery, private swimming pool, and bespoke architectural stonework.'
+  },
+  {
+    id: 4,
+    title: 'MiniPalais D-703',
+    slug: 'minipalais-d-703',
+    category: 'Royal House',
+    price: '$4,800,000',
+    priceNumber: 4800000,
+    location: 'Miami Beach, Florida, FL',
+    beds: 4,
+    baths: 4,
+    sqft: '1,300',
+    status: 'Active',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
+    description: 'Sophisticated modern palace layout blending minimalist cubic architectural structures with smart home tech and private terrace.'
+  },
+  {
+    id: 5,
+    title: 'The Never-Ending Story C-52',
+    slug: 'the-never-ending-story-c-52',
+    category: 'Bestseller',
+    price: '$5,400,000',
+    priceNumber: 5400000,
+    location: 'Bel Air, Los Angeles, CA',
+    beds: 6,
+    baths: 5,
+    sqft: '1,700',
+    status: 'Pending',
+    featured: false,
+    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
+    description: 'Architectural masterpiece crafted with cantilevered viewing balconies, thermal insulation, and spacious master suites.'
+  },
+  {
+    id: 6,
+    title: 'Darth Vader House A-24',
+    slug: 'darth-vader-house-a-24',
+    category: 'Properties',
+    price: '$2,950,000',
+    priceNumber: 2950000,
+    location: 'Palm Springs, California, CA',
+    beds: 4,
+    baths: 3,
+    sqft: '1,300',
+    status: 'Active',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
+    description: 'Iconic neo-futuristic residence featuring dramatic bold contours, custom warm wood paneling, and glass pavilions.'
+  },
+  {
+    id: 7,
+    title: 'Sunset Villa X-19',
+    slug: 'sunset-villa-x-19',
+    category: 'Royal House',
+    price: '$3,800,000',
+    priceNumber: 3800000,
+    location: 'Laguna Beach, California, CA',
+    beds: 4,
+    baths: 4,
+    sqft: '1,500',
+    status: 'Active',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80',
+    description: 'Prestigious waterfront and sunset-facing estate featuring multi-tier entertainment decks, infinity edge pool, and solar roofing.'
+  },
+  {
+    id: 8,
+    title: 'Highland Estate M-05',
+    slug: 'highland-estate-m-05',
+    category: 'Farm Villa',
+    price: '$4,600,000',
+    priceNumber: 4600000,
+    location: 'Telluride, Colorado, CO',
+    beds: 5,
+    baths: 5,
+    sqft: '1,200',
+    status: 'Sold',
+    featured: false,
+    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+    description: 'Elevated highland residence offering 360-degree panoramic valley views, private gated security, and designer eco-finishes.'
+  },
+  {
+    id: 9,
+    title: 'Family Villas C-92',
+    slug: 'family-villas-c-92',
+    category: 'Farm Villa',
+    price: '$1,850,000',
+    priceNumber: 1850000,
+    location: 'Austin, Texas, TX',
+    beds: 4,
+    baths: 3,
+    sqft: '1,700',
+    status: 'Active',
+    featured: false,
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
+    description: 'Generously proportioned family villa featuring manicured outdoor lawns, heated swimming pool, and double car garage.'
+  },
+  {
+    id: 10,
+    title: 'Heart and Soul Apartments D-703',
+    slug: 'heart-and-soul-apartments-d-703',
+    category: 'Properties',
+    price: '$2,100,000',
+    priceNumber: 2100000,
+    location: 'Chicago, Illinois, IL',
+    beds: 3,
+    baths: 2,
+    sqft: '1,400',
+    status: 'Active',
+    featured: false,
+    image: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80',
+    description: 'Boutique architectural residence combining timeless aesthetics with contemporary luxuries, floor-to-ceiling glass, and serene views.'
+  },
+  {
+    id: 11,
+    title: 'East Side Residence',
+    slug: 'east-side-residence',
+    category: 'Bestseller',
+    price: '$1,650,000',
+    priceNumber: 1650000,
+    location: 'Brooklyn, New York, NY',
+    beds: 3,
+    baths: 3,
+    sqft: '1,400',
+    status: 'Active',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80',
+    description: 'Modern luxury loft living in the heart of the district, featuring private balconies, high ceilings, and premium concierge services.'
+  },
+  {
+    id: 12,
+    title: 'Oceanview Retreat B-12',
+    slug: 'oceanview-retreat-b-12',
+    category: 'Royal House',
+    price: '$3,200,000',
+    priceNumber: 3200000,
+    location: 'Malibu, California, CA',
+    beds: 4,
+    baths: 3,
+    sqft: '1,500',
+    status: 'Active',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+    description: 'Idyllic coastal sanctuary with expansive ocean views, modern open-plan kitchen, wrap-around timber decks, and private beach pathway.'
+  }
+];
+
+export const getInitialProperties = () => {
+  try {
+    const saved = localStorage.getItem('admin_properties');
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        return parsed;
+      }
+    }
+  } catch (err) {
+    console.error('Error reading admin_properties from localStorage:', err);
+  }
+  // Initialize with 12 real properties
+  try {
+    localStorage.setItem('admin_properties', JSON.stringify(defaultProperties));
+  } catch (err) {
+    console.error('Error writing defaultProperties to localStorage:', err);
+  }
+  return defaultProperties;
+};

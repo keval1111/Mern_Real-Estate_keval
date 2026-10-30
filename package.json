@@ -1,0 +1,10 @@
+{
+  "name": "real-estate-workspace",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "npm --prefix Frontend run dev",
+    "dev:admin": "npm --prefix Admin run dev",
+    "build:frontend": "npm --prefix Frontend run build",
+    "build:admin": "npm --prefix Admin run build"
+  }
+}

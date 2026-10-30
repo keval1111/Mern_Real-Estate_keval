@@ -1,0 +1,222 @@
+import React from 'react';
+
+const Footer = () => {
+    return (
+        <footer
+            style={{ fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" }}
+            className="w-full bg-dark text-white pt-14 sm:pt-16 pb-10 sm:pb-12"
+        >
+            <div className="w-full max-w-365 mx-auto px-6 sm:px-10 md:px-14 lg:px-16 xl:px-20">
+                
+                {/* Main 4 Columns - Matched to exact reference layout */}
+                {/* Main 4 Columns - Matched to exact reference layout */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-4 pb-12 sm:pb-14">
+                    
+                    {/* Column 1: Newsletter Info (fits on 1 line for heading, exact 3 lines for description) */}
+                    <div className="lg:col-span-5 max-w-107.5">
+                        <h3 className="text-white text-xl sm:text-2xl font-extrabold mb-3.5 tracking-tight whitespace-normal xl:whitespace-nowrap">
+                            Subscribe newsletter and get -20% off
+                        </h3>
+                        <p className="text-white/90 font-medium text-xs sm:text-sm leading-[1.65]">
+                            Discover the perfect family haven in our spacious suburban residences. These thoughtfully designed homes provide ample room for your growing family to thrive.
+                        </p>
+                    </div>
+
+                    {/* Column 2: Shop */}
+                    <div className="lg:col-span-2 lg:pl-6 xl:pl-10">
+                        <h4 className="text-white text-lg sm:text-xl font-extrabold mb-3.5 tracking-tight">
+                            Shop:
+                        </h4>
+                        <ul className="space-y-2.5 text-xs sm:text-sm text-white font-medium">
+                            <li><a href="#search" className="hover:text-white/80 transition-colors">Search</a></li>
+                            <li><a href="#collections" className="hover:text-white/80 transition-colors">All collections</a></li>
+                            <li><a href="#products" className="hover:text-white/80 transition-colors">All products</a></li>
+                            <li><a href="#cart" className="hover:text-white/80 transition-colors">My Cart</a></li>
+                        </ul>
+                    </div>
+
+                    {/* Column 3: Account */}
+                    <div className="lg:col-span-3 lg:pl-4 xl:pl-8">
+                        <h4 className="text-white text-lg sm:text-xl font-extrabold mb-3.5 tracking-tight">
+                            Account:
+                        </h4>
+                        <ul className="space-y-2.5 text-xs sm:text-sm text-white font-medium">
+                            <li><a href="#about" className="hover:text-white/80 transition-colors">About us</a></li>
+                            <li><a href="#contact" className="hover:text-white/80 transition-colors">Contact with us</a></li>
+                            <li><a href="#faq" className="hover:text-white/80 transition-colors">Faq</a></li>
+                            <li><a href="#privacy" className="hover:text-white/80 transition-colors">Privacy Policy</a></li>
+                            <li><a href="#shipping" className="hover:text-white/80 transition-colors">Shipping & Delivery</a></li>
+                            <li><a href="#terms" className="hover:text-white/80 transition-colors">Terms & Conditions</a></li>
+                            <li><a href="#wishlist" className="hover:text-white/80 transition-colors">Wishlist</a></li>
+                        </ul>
+                    </div>
+
+                    {/* Column 4: Share */}
+                    <div className="lg:col-span-2 lg:pl-4 xl:pl-8">
+                        <h4 className="text-white text-lg sm:text-xl font-extrabold mb-3.5 tracking-tight">
+                            Share:
+                        </h4>
+                        <ul className="space-y-2.5 text-3.375 sm:text-sm text-white font-medium">
+                            <li><a href="#youtube" className="hover:text-white/80 transition-colors">Youtube</a></li>
+                            <li><a href="#facebook" className="hover:text-white/80 transition-colors">Facebook</a></li>
+                            <li><a href="#instagram" className="hover:text-white/80 transition-colors">Instagram</a></li>
+                            <li><a href="#twitter" className="hover:text-white/80 transition-colors">Twitter</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                {/* Bottom Bar: Copyright & Payment Badges (Clean, no border line as per reference) */}
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-1">
+                    
+                    {/* Copyright & Admin Link */}
+                    <div className="text-white font-medium text-3.25 sm:text-3.375 tracking-normal text-center sm:text-left flex flex-wrap items-center justify-center sm:justify-start gap-3">
+                        <span>© 2026, Modernrealestate WorkDo, Powered by WorkDo.io</span>
+                        <span className="hidden sm:inline text-white/30">•</span>
+                        <a
+                            href="http://localhost:5174"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand hover:underline font-semibold text-xs"
+                        >
+                            Admin Portal (Port 5174) →
+                        </a>
+                    </div>
+
+                    {/* Payment Method Badges - Authentic Shopify payment badge set */}
+                    <div className="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center sm:justify-end">
+                        {/* Visa */}
+                        <svg
+                            className="h-6 w-auto shrink-0 select-none shadow-2xs"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 38 24"
+                            width="38"
+                            height="24"
+                            fill="none"
+                            aria-label="Visa"
+                        >
+                            <title>Visa</title>
+                            <rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" strokeOpacity=".07" fill="none" />
+                            <path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#142FBD" />
+                            <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#1532CB" />
+                            <path d="M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z" fill="white" />
+                        </svg>
+
+                        {/* Mastercard */}
+                        <svg
+                            className="h-6 w-auto shrink-0 select-none shadow-2xs"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 38 24"
+                            width="38"
+                            height="24"
+                            fill="none"
+                            aria-label="Mastercard"
+                        >
+                            <title>Mastercard</title>
+                            <rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" strokeOpacity=".07" fill="none" />
+                            <path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#1C1C1C" />
+                            <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#232323" />
+                            <path d="M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z" fill="#EB001B" />
+                            <path d="M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z" fill="#F79E1B" />
+                            <path d="M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z" fill="#FF5F00" />
+                        </svg>
+
+                        {/* Amex */}
+                        <svg
+                            className="h-6 w-auto shrink-0 select-none shadow-2xs"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            viewBox="0 0 38 24"
+                            width="38"
+                            height="24"
+                            fill="none"
+                            aria-label="American Express"
+                        >
+                            <title>American Express</title>
+                            <rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" strokeOpacity=".07" fill="none" />
+                            <path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#0071CE" />
+                            <path d="M3 0.5H35C36.3348 0.5 37.5 1.58692 37.5 3V21C37.5 22.4239 36.4239 23.5 35 23.5H3C1.66524 23.5 0.5 22.4131 0.5 21V3C0.5 1.57614 1.57614 0.5 3 0.5Z" stroke="black" strokeOpacity="0.07" />
+                            <path d="M25.8662 6.33203V3H31L31.8662 5.5332L32.7334 3H37V14.2002H36.7998L34.8672 16.2656L36.7998 18.3594H37V21.2666H33.5996L31.9336 19.3994L30.2002 21.2666H19.4668V12.666H16L20.2666 3H24.4004L25.8662 6.33203ZM20.5996 20.2656H27V18.5322H22.666V17.3994H26.8662V15.666H22.666V14.5322H27V12.7988H20.5996V20.2656ZM30.5332 16.5322L27 20.2656H29.5996L31.8662 17.8662L34.0664 20.2656H36.7324L33.1992 16.4658L36.7324 12.7988H34.1328L31.8662 15.1992L29.7324 12.7988H27L30.5332 16.5322ZM17.666 11.7324H19.9326L20.5332 10.1992H23.999L24.666 11.7324H26.999L23.666 4.19922H20.999L17.666 11.7324ZM33.5996 4.19922L31.9326 8.86621L30.1992 4.19922H27V11.666H29.0664V6.39941L31 11.666H32.7998L34.7324 6.39941V11.666H36.7324V4.13281L33.5996 4.19922ZM23.2656 8.46582H21.2656L22.2656 5.99902L23.2656 8.46582Z" fill="white" />
+                        </svg>
+
+                        {/* PayPal */}
+                        <svg
+                            className="h-6 w-auto shrink-0 select-none shadow-2xs"
+                            viewBox="0 0 38 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="38"
+                            height="24"
+                            role="img"
+                            aria-label="PayPal"
+                        >
+                            <title>PayPal</title>
+                            <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" />
+                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" />
+                            <path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z" />
+                            <path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z" />
+                            <path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z" />
+                        </svg>
+
+                        {/* Diners Club */}
+                        <svg
+                            className="h-6 w-auto shrink-0 select-none shadow-2xs"
+                            viewBox="0 0 38 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            width="38"
+                            height="24"
+                            aria-label="Diners Club"
+                        >
+                            <title>Diners Club</title>
+                            <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" />
+                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" />
+                            <path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8" />
+                        </svg>
+
+                        {/* Discover */}
+                        <svg
+                            className="h-6 w-auto shrink-0 select-none shadow-2xs"
+                            viewBox="0 0 38 24"
+                            width="38"
+                            height="24"
+                            role="img"
+                            aria-label="Discover"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <title>Discover</title>
+                            <path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" />
+                            <path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff" />
+                            <path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20" />
+                            <path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)" />
+                            <path opacity=".65" d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)" />
+                            <path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20" />
+                            <path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20" />
+                            <path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120" />
+                            <defs>
+                                <linearGradient id="pi-paint0_linear" x1="21.657" y1="12.275" x2="19.632" y2="9.104" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#F89F20" />
+                                    <stop offset=".25" stopColor="#F79A20" />
+                                    <stop offset=".533" stopColor="#F68D20" />
+                                    <stop offset=".62" stopColor="#F58720" />
+                                    <stop offset=".723" stopColor="#F48120" />
+                                    <stop offset="1" stopColor="#F37521" />
+                                </linearGradient>
+                                <linearGradient id="pi-paint1_linear" x1="21.338" y1="12.232" x2="18.378" y2="6.446" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#F58720" />
+                                    <stop offset=".359" stopColor="#E16F27" />
+                                    <stop offset=".703" stopColor="#D4602C" />
+                                    <stop offset=".982" stopColor="#D05B2E" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
